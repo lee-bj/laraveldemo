@@ -1,0 +1,16 @@
+stages:
+  - ucloud-test
+###  - ucloud-stage
+###  - ucloud-web
+ 
+ 
+ucloud-test:
+  stage:
+    ucloud-test
+  tags:
+    - 91idcUp
+  only:
+    - main
+  script:
+    - echo "main update"
+    
